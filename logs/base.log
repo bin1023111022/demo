@@ -1,0 +1,9 @@
+2017-08-30 14:26:07.975 [pool-2-thread-1] ERROR c.c.SocketTest. -  - IOException
+java.net.SocketException: Connection reset by peer: socket write error
+	at java.net.SocketOutputStream.socketWrite0(Native Method) ~[?:1.8.0_141]
+	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:111) ~[?:1.8.0_141]
+	at java.net.SocketOutputStream.write(SocketOutputStream.java:143) ~[?:1.8.0_141]
+	at com.citic.SocketTest$1.run(SocketTest.java:95) [classes/:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_141]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_141]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_141]

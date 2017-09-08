@@ -192,11 +192,11 @@ public class StringUtil {
 	    }
 	
 	public static void main(String[] args) {
-//		System.out.println(YitongUtil.toStrHex("CEDED0A7C9CCBBA7"));
-		System.out.println("20170101>20170102"+("20170101".compareTo("20170102")));
-		System.out.println("20180101>20170102"+("20180101".compareTo("20170102")));
-		System.out.println("20170401>20170102"+("20170401".compareTo("20170102")));
-		System.out.println("20170108>20171102"+("20170108".compareTo("20171102")));
+		System.out.println(StringToAsciiString("12345"));
+//		System.out.println("20170101>20170102"+("20170101".compareTo("20170102")));
+//		System.out.println("20180101>20170102"+("20180101".compareTo("20170102")));
+//		System.out.println("20170401>20170102"+("20170401".compareTo("20170102")));
+//		System.out.println("20170108>20171102"+("20170108".compareTo("20171102")));
 //		hexString2binary("6020048030c08811");
 	}
 }

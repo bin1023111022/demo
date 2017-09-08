@@ -48,6 +48,13 @@
 	    <artifactId>bcprov-jdk15on</artifactId>
 	    <version>1.54</version>
 	</dependency>
+	<!-- google json -->
+	<dependency>
+		<groupId>com.google.code.gson</groupId>
+		<artifactId>gson</artifactId>
+		<version>2.3.1</version>
+	</dependency>
+	
   </dependencies>
   
    <build>
