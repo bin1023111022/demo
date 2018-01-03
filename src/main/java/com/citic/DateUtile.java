@@ -50,6 +50,19 @@ public class DateUtile {
 		return new java.util.Date();
 
 	}
+	public static Date getDateY(String str){
+		SimpleDateFormat sim=new SimpleDateFormat();
+//		String str="2011-5-31 14:40:50";
+		Date d = new Date();
+		try {
+			d = sim.parse(str);
+		} catch (ParseException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		return d;
+	}
 
 	public static final String DATE_PATTERN = "yyyy-MM-dd";
 	public static final String TIME_PATTERN = "HH:mm:ss";
@@ -425,16 +438,34 @@ public class DateUtile {
 		int temp = ip + (dayofYear2 - dayofYear1 + 1);
 		return temp;
 	}
+	public static String formatDateMinSec(Date date) {
+		String dateStr = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(date);
+		return dateStr;
+	}
+	public static Date formatDateMinSec(String date) {
+		Date dateStr = null;
+		try {
+			dateStr = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").parse(date);
+		} catch (ParseException e) {
+			e.printStackTrace();
+		}
+		return dateStr;
+	}
 	
 	
 	    public static void main(String[] args)
 	    {
 	        Calendar calendar = Calendar.getInstance();
 	        Date date = new Date();
-	        calendar.setTime(date);
-	        calendar.add(Calendar.MONTH, 1);
-	        date = calendar.getTime();
-	        System.out.println(getSpecifiedFormatDate(date,"yyyyMMdd"));
+//	        calendar.setTime(date);
+//	        calendar.add(Calendar.MONTH, 1);
+//	        date = calendar.getTime();
+	        
+	        Date dt = getDateY(date.toString());
+//			Date dt = new Date(map.get("realTime").toString());
+			
+	        
+	        System.out.println(new Date().getTime()>formatDateMinSec("2017-12-08 18:25:00").getTime());
 	        
 	    }
 

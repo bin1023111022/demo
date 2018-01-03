@@ -54,6 +54,23 @@
 		<artifactId>gson</artifactId>
 		<version>2.3.1</version>
 	</dependency>
+	<!-- jackson -->
+	<dependency>
+	    <groupId>com.fasterxml.jackson.module</groupId>
+	    <artifactId>jackson-module-jaxb-annotations</artifactId>
+	    <version>2.2.1</version>
+	</dependency>
+	
+	<dependency>
+		<groupId>wandoumiao</groupId>
+		<artifactId>json</artifactId>
+		<version>1</version>
+	</dependency>
+	<dependency>
+    	<groupId>com.zhongyun</groupId>
+    	<artifactId>edusafety-json</artifactId>
+    	<version>0.2.1</version>
+    </dependency>
 	
   </dependencies>
   
